@@ -122,15 +122,15 @@
 		A8D419E118ABE4ED00CC03DF /* DSMultilineLabelNode */ = {
 			isa = PBXGroup;
 			children = (
+				A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */,
+				A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */,
+				A8D41A1218ABE59D00CC03DF /* TestScene.h */,
+				A8D41A1318ABE59D00CC03DF /* TestScene.m */,
 				A8D419EA18ABE4ED00CC03DF /* AppDelegate.h */,
 				A8D419EB18ABE4ED00CC03DF /* AppDelegate.m */,
 				A8D419ED18ABE4ED00CC03DF /* Main.storyboard */,
 				A8D419F018ABE4ED00CC03DF /* ViewController.h */,
 				A8D419F118ABE4ED00CC03DF /* ViewController.m */,
-				A8D41A1218ABE59D00CC03DF /* TestScene.h */,
-				A8D41A1318ABE59D00CC03DF /* TestScene.m */,
-				A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */,
-				A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */,
 				A8D419F318ABE4ED00CC03DF /* Images.xcassets */,
 				A8D419E218ABE4ED00CC03DF /* Supporting Files */,
 			);

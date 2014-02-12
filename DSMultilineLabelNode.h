@@ -8,6 +8,17 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface DSMultilineLabelNode : SKNode
+@interface DSMultilineLabelNode : SKSpriteNode
+
+@property(retain, nonatomic) SKColor *fontColor;
+@property(copy, nonatomic) NSString *fontName;
+@property(nonatomic) CGFloat fontSize;
+@property(nonatomic) SKLabelHorizontalAlignmentMode horizontalAlignmentMode;
+@property(copy, nonatomic) NSString *text;
+@property(nonatomic) SKLabelVerticalAlignmentMode verticalAlignmentMode;
+
++ (instancetype)labelNodeWithFontNamed:(NSString *)fontName;
+- (instancetype)initWithFontNamed:(NSString *)fontName;
+
 
 @end
