@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>787343A6-1652-4E63-8C9D-75F6DE53726E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DSMultilineLabelNode</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88FD5B36-FF1C-4E4D-8284-8C12E81342DA</key>
+		<string>https://github.com/downrightsimple/DSMultilineLabelNode.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DSMultilineLabelNode/DSMultilineLabelNode.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88FD5B36-FF1C-4E4D-8284-8C12E81342DA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/downrightsimple/DSMultilineLabelNode.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88FD5B36-FF1C-4E4D-8284-8C12E81342DA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88FD5B36-FF1C-4E4D-8284-8C12E81342DA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DSMultilineLabelNode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
