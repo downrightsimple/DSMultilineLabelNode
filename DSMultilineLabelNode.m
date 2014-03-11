@@ -148,10 +148,10 @@
     
     //Calculate the size that the text will take up, given our options.  We use the full screen size for the bounds
 	if (_paragraphWidth == 0) {
-		_paragraphWidth = [[UIScreen mainScreen] bounds].size.width;
+		_paragraphWidth = self.scene.size.width;
 	}
 	
-    CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, [[UIScreen mainScreen] bounds].size.height)
+    CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, self.scene.size.height)
                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
                                       attributes:textAttributes
                                          context:nil];
