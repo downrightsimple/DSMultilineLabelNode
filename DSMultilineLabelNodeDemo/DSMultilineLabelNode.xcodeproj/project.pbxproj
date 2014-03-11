@@ -14,8 +14,6 @@
 		33B2C28318CE93DB0006AC87 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C28118CE93DB0006AC87 /* Credits.rtf */; };
 		33B2C28518CE93DB0006AC87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C28418CE93DB0006AC87 /* MainMenu.xib */; };
 		33B2C28A18CE93DB0006AC87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B2C28918CE93DB0006AC87 /* AppDelegate.m */; };
-		33B2C29518CE93DB0006AC87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419FA18ABE4ED00CC03DF /* XCTest.framework */; };
-		33B2C29618CE93DB0006AC87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B2C27118CE93DB0006AC87 /* Cocoa.framework */; };
 		A8D419DC18ABE4ED00CC03DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DB18ABE4ED00CC03DF /* Foundation.framework */; };
 		A8D419DE18ABE4ED00CC03DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DD18ABE4ED00CC03DF /* CoreGraphics.framework */; };
 		A8D419E018ABE4ED00CC03DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DF18ABE4ED00CC03DF /* UIKit.framework */; };
@@ -29,16 +27,6 @@
 		A8D41A1418ABE59D00CC03DF /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1318ABE59D00CC03DF /* TestScene.m */; };
 		A8D41A1718ABE66E00CC03DF /* DSMultilineLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		33B2C29718CE93DB0006AC87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D419D018ABE4ED00CC03DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33B2C26F18CE93DB0006AC87;
-			remoteInfo = MultiLineLabelNodeMac;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		33B2C27018CE93DB0006AC87 /* MultiLineLabelNodeMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiLineLabelNodeMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +42,6 @@
 		33B2C28418CE93DB0006AC87 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		33B2C28918CE93DB0006AC87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33B2C28B18CE93DB0006AC87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		33B2C29418CE93DB0006AC87 /* MultiLineLabelNodeMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiLineLabelNodeMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSMultilineLabelNode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D419DB18ABE4ED00CC03DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8D419DD18ABE4ED00CC03DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,15 +71,6 @@
 			files = (
 				33B2C27318CE93DB0006AC87 /* SpriteKit.framework in Frameworks */,
 				33B2C27218CE93DB0006AC87 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33B2C29118CE93DB0006AC87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33B2C29618CE93DB0006AC87 /* Cocoa.framework in Frameworks */,
-				33B2C29518CE93DB0006AC87 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +151,6 @@
 			children = (
 				A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */,
 				33B2C27018CE93DB0006AC87 /* MultiLineLabelNodeMac.app */,
-				33B2C29418CE93DB0006AC87 /* MultiLineLabelNodeMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,24 +212,6 @@
 			productReference = 33B2C27018CE93DB0006AC87 /* MultiLineLabelNodeMac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		33B2C29318CE93DB0006AC87 /* MultiLineLabelNodeMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33B2C2A418CE93DB0006AC87 /* Build configuration list for PBXNativeTarget "MultiLineLabelNodeMacTests" */;
-			buildPhases = (
-				33B2C29018CE93DB0006AC87 /* Sources */,
-				33B2C29118CE93DB0006AC87 /* Frameworks */,
-				33B2C29218CE93DB0006AC87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				33B2C29818CE93DB0006AC87 /* PBXTargetDependency */,
-			);
-			name = MultiLineLabelNodeMacTests;
-			productName = MultiLineLabelNodeMacTests;
-			productReference = 33B2C29418CE93DB0006AC87 /* MultiLineLabelNodeMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A8D419D718ABE4ED00CC03DF /* DSMultilineLabelNode */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D41A0A18ABE4EE00CC03DF /* Build configuration list for PBXNativeTarget "DSMultilineLabelNode" */;
@@ -278,11 +237,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Downright Simple";
-				TargetAttributes = {
-					33B2C29318CE93DB0006AC87 = {
-						TestTargetID = A8D419D718ABE4ED00CC03DF;
-					};
-				};
 			};
 			buildConfigurationList = A8D419D318ABE4ED00CC03DF /* Build configuration list for PBXProject "DSMultilineLabelNode" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,7 +253,6 @@
 			targets = (
 				A8D419D718ABE4ED00CC03DF /* DSMultilineLabelNode */,
 				33B2C26F18CE93DB0006AC87 /* MultiLineLabelNodeMac */,
-				33B2C29318CE93DB0006AC87 /* MultiLineLabelNodeMacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,13 +265,6 @@
 				33B2C27D18CE93DB0006AC87 /* InfoPlist.strings in Resources */,
 				33B2C28318CE93DB0006AC87 /* Credits.rtf in Resources */,
 				33B2C28518CE93DB0006AC87 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		33B2C29218CE93DB0006AC87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,13 +290,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33B2C29018CE93DB0006AC87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A8D419D418ABE4ED00CC03DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,14 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		33B2C29818CE93DB0006AC87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 33B2C26F18CE93DB0006AC87 /* MultiLineLabelNodeMac */;
-			targetProxy = 33B2C29718CE93DB0006AC87 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		33B2C27B18CE93DB0006AC87 /* InfoPlist.strings */ = {
@@ -455,53 +386,6 @@
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		33B2C2A518CE93DB0006AC87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSMultilineLabelNode.app/DSMultilineLabelNode";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MultiLineLabelNodeMacTests/MultiLineLabelNodeMacTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		33B2C2A618CE93DB0006AC87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSMultilineLabelNode.app/DSMultilineLabelNode";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Prefix.pch";
-				INFOPLIST_FILE = "MultiLineLabelNodeMacTests/MultiLineLabelNodeMacTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -615,14 +499,6 @@
 			buildConfigurations = (
 				33B2C2A218CE93DB0006AC87 /* Debug */,
 				33B2C2A318CE93DB0006AC87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		33B2C2A418CE93DB0006AC87 /* Build configuration list for PBXNativeTarget "MultiLineLabelNodeMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33B2C2A518CE93DB0006AC87 /* Debug */,
-				33B2C2A618CE93DB0006AC87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
