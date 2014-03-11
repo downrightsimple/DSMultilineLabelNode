@@ -65,7 +65,7 @@
 //For each of the setters, after we set the appropriate property, we call the
 //retexture method to generate and apply our new texture to the node
 
--(void) setFontColor:(UIColor *)fontColor
+-(void) setFontColor:(SKColor *)fontColor
 {
     _fontColor = fontColor;
     [self retexture];
@@ -150,12 +150,17 @@
 	if (_paragraphWidth == 0) {
 		_paragraphWidth = self.scene.size.width;
 	}
-	
+#if TARGET_OS_IPHONE
     CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, self.scene.size.height)
                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
                                       attributes:textAttributes
                                          context:nil];
-    
+				
+#else
+	CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, self.scene.size.height)
+                                         options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
+                                      attributes:textAttributes];
+#endif
     //iOS7 uses fractional size values.  So we needed to ceil it to make sure we have enough room for display.
     textRect.size.height = ceil(textRect.size.height);
     textRect.size.width = ceil(textRect.size.width);
@@ -164,6 +169,7 @@
     SKSpriteNode *selfNode = (SKSpriteNode*) self;
     selfNode.size = textRect.size;
     
+#if TARGET_OS_IPHONE
     //Create the graphics context
     UIGraphicsBeginImageContextWithOptions(textRect.size,NO,0.0);
     
@@ -175,11 +181,29 @@
     
     //Close the context
     UIGraphicsEndImageContext();
+#else 
+
+
+	DSImage *image = [[DSImage alloc] initWithSize:textRect.size];
+	NSBitmapImageRep* imageRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL pixelsWide:textRect.size.width pixelsHigh:textRect.size.height bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:0 bitsPerPixel:0];
+	
+	[image addRepresentation:imageRep];
+	[image lockFocus];
+	
+	[text drawInRect:textRect withAttributes:textAttributes];
+	
+	[image unlockFocus];
+	
+
+#endif
     
     return image;
 }
 
 //Performs translation between the SKLabelHorizontalAlignmentMode supported by SKLabelNode and the NSTextAlignment required for string drawing
+
+#if TARGET_OS_IPHONE
+
 -(NSTextAlignment) mapSkLabelHorizontalAlignmentToNSTextAlignment:(SKLabelHorizontalAlignmentMode)alignment
 {
     switch (alignment) {
@@ -202,6 +226,30 @@
     return NSTextAlignmentLeft;
 }
 
+#else
 
+-(NSTextAlignment) mapSkLabelHorizontalAlignmentToNSTextAlignment:(SKLabelHorizontalAlignmentMode)alignment
+{
+    switch (alignment) {
+        case SKLabelHorizontalAlignmentModeLeft:
+            return kCTTextAlignmentLeft;
+            break;
+            
+        case SKLabelHorizontalAlignmentModeCenter:
+            return kCTTextAlignmentCenter;
+            break;
+            
+        case SKLabelHorizontalAlignmentModeRight:
+            return kCTTextAlignmentRight;
+            break;
+            
+        default:
+            break;
+    }
+    
+    return kCTTextAlignmentLeft;
+}
+
+#endif
 
 @end

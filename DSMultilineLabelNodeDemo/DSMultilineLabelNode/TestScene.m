@@ -36,6 +36,9 @@
 
 }
 
+
+#if TARGET_OS_IPHONE
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	
 	CGPoint location = [[touches anyObject] locationInNode:self];
@@ -49,5 +52,7 @@
 	node.position = location;
 	
 }
+
+#endif
 
 @end

@@ -10,10 +10,12 @@
 		33B2C27218CE93DB0006AC87 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B2C27118CE93DB0006AC87 /* Cocoa.framework */; };
 		33B2C27318CE93DB0006AC87 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D41A1018ABE56700CC03DF /* SpriteKit.framework */; };
 		33B2C27D18CE93DB0006AC87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C27B18CE93DB0006AC87 /* InfoPlist.strings */; };
-		33B2C27F18CE93DB0006AC87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B2C27E18CE93DB0006AC87 /* main.m */; };
 		33B2C28318CE93DB0006AC87 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C28118CE93DB0006AC87 /* Credits.rtf */; };
 		33B2C28518CE93DB0006AC87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B2C28418CE93DB0006AC87 /* MainMenu.xib */; };
 		33B2C28A18CE93DB0006AC87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B2C28918CE93DB0006AC87 /* AppDelegate.m */; };
+		33B2C2A718CE94CD0006AC87 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1318ABE59D00CC03DF /* TestScene.m */; };
+		33B2C2A818CE94D10006AC87 /* DSMultilineLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */; };
+		33B2C2AA18CE98A50006AC87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B2C2A918CE98A50006AC87 /* main.m */; };
 		A8D419DC18ABE4ED00CC03DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DB18ABE4ED00CC03DF /* Foundation.framework */; };
 		A8D419DE18ABE4ED00CC03DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DD18ABE4ED00CC03DF /* CoreGraphics.framework */; };
 		A8D419E018ABE4ED00CC03DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DF18ABE4ED00CC03DF /* UIKit.framework */; };
@@ -36,12 +38,12 @@
 		33B2C27718CE93DB0006AC87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33B2C27A18CE93DB0006AC87 /* MultiLineLabelNodeMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "MultiLineLabelNodeMac-Info.plist"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Info.plist"; sourceTree = "<group>"; };
 		33B2C27C18CE93DB0006AC87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		33B2C27E18CE93DB0006AC87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MultiLineLabelNodeMac/main.m; sourceTree = "<group>"; };
 		33B2C28018CE93DB0006AC87 /* MultiLineLabelNodeMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MultiLineLabelNodeMac-Prefix.pch"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Prefix.pch"; sourceTree = "<group>"; };
 		33B2C28218CE93DB0006AC87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		33B2C28418CE93DB0006AC87 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		33B2C28918CE93DB0006AC87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33B2C28B18CE93DB0006AC87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33B2C2A918CE98A50006AC87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MultiLineLabelNodeMac/main.m; sourceTree = "<group>"; };
 		A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSMultilineLabelNode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D419DB18ABE4ED00CC03DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8D419DD18ABE4ED00CC03DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,9 +128,9 @@
 		33B2C27918CE93DB0006AC87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33B2C2A918CE98A50006AC87 /* main.m */,
 				33B2C27A18CE93DB0006AC87 /* MultiLineLabelNodeMac-Info.plist */,
 				33B2C27B18CE93DB0006AC87 /* InfoPlist.strings */,
-				33B2C27E18CE93DB0006AC87 /* main.m */,
 				33B2C28018CE93DB0006AC87 /* MultiLineLabelNodeMac-Prefix.pch */,
 				33B2C28118CE93DB0006AC87 /* Credits.rtf */,
 			);
@@ -285,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33B2C27F18CE93DB0006AC87 /* main.m in Sources */,
+				33B2C2A818CE94D10006AC87 /* DSMultilineLabelNode.m in Sources */,
 				33B2C28A18CE93DB0006AC87 /* AppDelegate.m in Sources */,
+				33B2C2AA18CE98A50006AC87 /* main.m in Sources */,
+				33B2C2A718CE94CD0006AC87 /* TestScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
