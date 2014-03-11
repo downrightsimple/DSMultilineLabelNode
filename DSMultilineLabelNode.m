@@ -111,7 +111,7 @@
 //Generates and applies new textures based on the current property values
 -(void) retexture
 {
-    UIImage *newTextImage = [self imageFromText:self.text];
+    DSImage *newTextImage = [self imageFromText:self.text];
     SKTexture *newTexture =[SKTexture textureWithImage:newTextImage];
     
     SKSpriteNode *selfNode = (SKSpriteNode*) self;
@@ -122,7 +122,7 @@
 
 }
 
--(UIImage *)imageFromText:(NSString *)text
+-(DSImage *)imageFromText:(NSString *)text
 {
     //First we define a paragrahp style, which has the support for doing the line breaks and text alignment that we require
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -131,7 +131,7 @@
     paragraphStyle.lineSpacing = 1;
     
     //Create the font using the values set by the user
-    UIFont *font = [UIFont fontWithName:self.fontName size:self.fontSize];
+    DSFont *font = [DSFont fontWithName:self.fontName size:self.fontSize];
     
     //Create our textAttributes dictionary that we'll use when drawing to the graphics context
     NSMutableDictionary *textAttributes = [NSMutableDictionary dictionary];
@@ -171,7 +171,7 @@
     [text drawInRect:textRect withAttributes:textAttributes];
     
     //Create the image from the context
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    DSImage *image = UIGraphicsGetImageFromCurrentImageContext();
     
     //Close the context
     UIGraphicsEndImageContext();

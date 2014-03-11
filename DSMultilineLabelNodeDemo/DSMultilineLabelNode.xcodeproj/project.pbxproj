@@ -59,17 +59,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33B2C22C18CE7F180006AC87 /* iPad */ = {
+		33B2C26B18CE93740006AC87 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A8D419EA18ABE4ED00CC03DF /* AppDelegate.h */,
+				A8D419EB18ABE4ED00CC03DF /* AppDelegate.m */,
+				A8D419ED18ABE4ED00CC03DF /* Main.storyboard */,
+				A8D419F018ABE4ED00CC03DF /* ViewController.h */,
+				A8D419F118ABE4ED00CC03DF /* ViewController.m */,
+				A8D419E218ABE4ED00CC03DF /* Supporting Files */,
 			);
-			name = iPad;
+			name = iOS;
+			path = DSMultilineLabelNode;
 			sourceTree = "<group>";
 		};
 		A8D419CF18ABE4ED00CC03DF = {
 			isa = PBXGroup;
 			children = (
 				A8D419E118ABE4ED00CC03DF /* DSMultilineLabelNode */,
+				33B2C26B18CE93740006AC87 /* iOS */,
 				A8D419DA18ABE4ED00CC03DF /* Frameworks */,
 				A8D419D918ABE4ED00CC03DF /* Products */,
 			);
@@ -98,18 +106,11 @@
 		A8D419E118ABE4ED00CC03DF /* DSMultilineLabelNode */ = {
 			isa = PBXGroup;
 			children = (
-				33B2C22C18CE7F180006AC87 /* iPad */,
 				A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */,
 				A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */,
 				A8D41A1218ABE59D00CC03DF /* TestScene.h */,
 				A8D41A1318ABE59D00CC03DF /* TestScene.m */,
-				A8D419EA18ABE4ED00CC03DF /* AppDelegate.h */,
-				A8D419EB18ABE4ED00CC03DF /* AppDelegate.m */,
-				A8D419ED18ABE4ED00CC03DF /* Main.storyboard */,
-				A8D419F018ABE4ED00CC03DF /* ViewController.h */,
-				A8D419F118ABE4ED00CC03DF /* ViewController.m */,
 				A8D419F318ABE4ED00CC03DF /* Images.xcassets */,
-				A8D419E218ABE4ED00CC03DF /* Supporting Files */,
 			);
 			path = DSMultilineLabelNode;
 			sourceTree = "<group>";
