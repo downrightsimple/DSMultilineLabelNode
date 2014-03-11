@@ -101,6 +101,13 @@
     [self retexture];
 }
 
+-(void)setParagraphWidth:(CGFloat)paragraphWidth {
+	
+	_paragraphWidth = paragraphWidth;
+	[self retexture];
+	
+}
+
 //Generates and applies new textures based on the current property values
 -(void) retexture
 {
@@ -140,7 +147,11 @@
     
     
     //Calculate the size that the text will take up, given our options.  We use the full screen size for the bounds
-    CGRect textRect = [text boundingRectWithSize:[[UIScreen mainScreen] bounds].size
+	if (_paragraphWidth == 0) {
+		_paragraphWidth = [[UIScreen mainScreen] bounds].size.width;
+	}
+	
+    CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, [[UIScreen mainScreen] bounds].size.height)
                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
                                       attributes:textAttributes
                                          context:nil];

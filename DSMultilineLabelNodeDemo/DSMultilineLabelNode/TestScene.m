@@ -9,18 +9,45 @@
 #import "TestScene.h"
 #import "DSMultilineLabelNode.h"
 
+@interface TestScene() {
+	
+	DSMultilineLabelNode* node;
+	
+}
+
+@end
+
+
 @implementation TestScene
 
 - (void)didMoveToView: (SKView *) view
 {
-    self.backgroundColor = [SKColor blueColor];
-    self.scaleMode = SKSceneScaleModeAspectFit;
-    
-    DSMultilineLabelNode *node = [DSMultilineLabelNode labelNodeWithFontNamed:@"Helvetica"];
-    node.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-    [self addChild:node];
-    node.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+	self.backgroundColor = [SKColor blueColor];
+//	self.scaleMode = SKSceneScaleModeAspectFit;
+	
+	node = [DSMultilineLabelNode labelNodeWithFontNamed:@"Futura"];
+	node.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+	node.paragraphWidth = 400;
+//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter; //default
+//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
+	[self addChild:node];
+	node.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
 
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	
+	CGPoint location = [[touches anyObject] locationInNode:self];
+	node.position = location;
+	
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+	
+	CGPoint location = [[touches anyObject] locationInNode:self];
+	node.position = location;
+	
 }
 
 @end

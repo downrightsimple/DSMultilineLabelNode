@@ -16,25 +16,10 @@
 		A8D419EF18ABE4ED00CC03DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D419ED18ABE4ED00CC03DF /* Main.storyboard */; };
 		A8D419F218ABE4ED00CC03DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D419F118ABE4ED00CC03DF /* ViewController.m */; };
 		A8D419F418ABE4ED00CC03DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D419F318ABE4ED00CC03DF /* Images.xcassets */; };
-		A8D419FB18ABE4ED00CC03DF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419FA18ABE4ED00CC03DF /* XCTest.framework */; };
-		A8D419FC18ABE4ED00CC03DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DB18ABE4ED00CC03DF /* Foundation.framework */; };
-		A8D419FD18ABE4ED00CC03DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D419DF18ABE4ED00CC03DF /* UIKit.framework */; };
-		A8D41A0518ABE4ED00CC03DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D41A0318ABE4ED00CC03DF /* InfoPlist.strings */; };
-		A8D41A0718ABE4ED00CC03DF /* DSMultilineLabelNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A0618ABE4ED00CC03DF /* DSMultilineLabelNodeTests.m */; };
 		A8D41A1118ABE56700CC03DF /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D41A1018ABE56700CC03DF /* SpriteKit.framework */; };
 		A8D41A1418ABE59D00CC03DF /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1318ABE59D00CC03DF /* TestScene.m */; };
 		A8D41A1718ABE66E00CC03DF /* DSMultilineLabelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A8D419FE18ABE4ED00CC03DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8D419D018ABE4ED00CC03DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8D419D718ABE4ED00CC03DF;
-			remoteInfo = DSMultilineLabelNode;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSMultilineLabelNode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,16 +36,12 @@
 		A8D419F018ABE4ED00CC03DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A8D419F118ABE4ED00CC03DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A8D419F318ABE4ED00CC03DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A8D419F918ABE4ED00CC03DF /* DSMultilineLabelNodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSMultilineLabelNodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D419FA18ABE4ED00CC03DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A8D41A0218ABE4ED00CC03DF /* DSMultilineLabelNodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSMultilineLabelNodeTests-Info.plist"; sourceTree = "<group>"; };
-		A8D41A0418ABE4ED00CC03DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8D41A0618ABE4ED00CC03DF /* DSMultilineLabelNodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSMultilineLabelNodeTests.m; sourceTree = "<group>"; };
 		A8D41A1018ABE56700CC03DF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A8D41A1218ABE59D00CC03DF /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
-		A8D41A1318ABE59D00CC03DF /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
-		A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSMultilineLabelNode.h; path = ../../DSMultilineLabelNode.h; sourceTree = "<group>"; };
-		A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSMultilineLabelNode.m; path = ../../DSMultilineLabelNode.m; sourceTree = "<group>"; };
+		A8D41A1318ABE59D00CC03DF /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TestScene.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = DSMultilineLabelNode.h; path = ../../DSMultilineLabelNode.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = DSMultilineLabelNode.m; path = ../../DSMultilineLabelNode.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,24 +56,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8D419F618ABE4ED00CC03DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8D419FB18ABE4ED00CC03DF /* XCTest.framework in Frameworks */,
-				A8D419FD18ABE4ED00CC03DF /* UIKit.framework in Frameworks */,
-				A8D419FC18ABE4ED00CC03DF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B2C22C18CE7F180006AC87 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		A8D419CF18ABE4ED00CC03DF = {
 			isa = PBXGroup;
 			children = (
 				A8D419E118ABE4ED00CC03DF /* DSMultilineLabelNode */,
-				A8D41A0018ABE4ED00CC03DF /* DSMultilineLabelNodeTests */,
 				A8D419DA18ABE4ED00CC03DF /* Frameworks */,
 				A8D419D918ABE4ED00CC03DF /* Products */,
 			);
@@ -102,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */,
-				A8D419F918ABE4ED00CC03DF /* DSMultilineLabelNodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +98,7 @@
 		A8D419E118ABE4ED00CC03DF /* DSMultilineLabelNode */ = {
 			isa = PBXGroup;
 			children = (
+				33B2C22C18CE7F180006AC87 /* iPad */,
 				A8D41A1518ABE66E00CC03DF /* DSMultilineLabelNode.h */,
 				A8D41A1618ABE66E00CC03DF /* DSMultilineLabelNode.m */,
 				A8D41A1218ABE59D00CC03DF /* TestScene.h */,
@@ -148,24 +125,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A8D41A0018ABE4ED00CC03DF /* DSMultilineLabelNodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				A8D41A0618ABE4ED00CC03DF /* DSMultilineLabelNodeTests.m */,
-				A8D41A0118ABE4ED00CC03DF /* Supporting Files */,
-			);
-			path = DSMultilineLabelNodeTests;
-			sourceTree = "<group>";
-		};
-		A8D41A0118ABE4ED00CC03DF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A8D41A0218ABE4ED00CC03DF /* DSMultilineLabelNodeTests-Info.plist */,
-				A8D41A0318ABE4ED00CC03DF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,24 +145,6 @@
 			productReference = A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A8D419F818ABE4ED00CC03DF /* DSMultilineLabelNodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8D41A0D18ABE4EE00CC03DF /* Build configuration list for PBXNativeTarget "DSMultilineLabelNodeTests" */;
-			buildPhases = (
-				A8D419F518ABE4ED00CC03DF /* Sources */,
-				A8D419F618ABE4ED00CC03DF /* Frameworks */,
-				A8D419F718ABE4ED00CC03DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8D419FF18ABE4ED00CC03DF /* PBXTargetDependency */,
-			);
-			name = DSMultilineLabelNodeTests;
-			productName = DSMultilineLabelNodeTests;
-			productReference = A8D419F918ABE4ED00CC03DF /* DSMultilineLabelNodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,11 +153,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Downright Simple";
-				TargetAttributes = {
-					A8D419F818ABE4ED00CC03DF = {
-						TestTargetID = A8D419D718ABE4ED00CC03DF;
-					};
-				};
 			};
 			buildConfigurationList = A8D419D318ABE4ED00CC03DF /* Build configuration list for PBXProject "DSMultilineLabelNode" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,7 +168,6 @@
 			projectRoot = "";
 			targets = (
 				A8D419D718ABE4ED00CC03DF /* DSMultilineLabelNode */,
-				A8D419F818ABE4ED00CC03DF /* DSMultilineLabelNodeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,14 +180,6 @@
 				A8D419F418ABE4ED00CC03DF /* Images.xcassets in Resources */,
 				A8D419E618ABE4ED00CC03DF /* InfoPlist.strings in Resources */,
 				A8D419EF18ABE4ED00CC03DF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8D419F718ABE4ED00CC03DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8D41A0518ABE4ED00CC03DF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,23 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8D419F518ABE4ED00CC03DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8D41A0718ABE4ED00CC03DF /* DSMultilineLabelNodeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A8D419FF18ABE4ED00CC03DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8D419D718ABE4ED00CC03DF /* DSMultilineLabelNode */;
-			targetProxy = A8D419FE18ABE4ED00CC03DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8D419E418ABE4ED00CC03DF /* InfoPlist.strings */ = {
@@ -304,14 +215,6 @@
 				A8D419EE18ABE4ED00CC03DF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A8D41A0318ABE4ED00CC03DF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8D41A0418ABE4ED00CC03DF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,7 +300,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSMultilineLabelNode/DSMultilineLabelNode-Prefix.pch";
 				INFOPLIST_FILE = "DSMultilineLabelNode/DSMultilineLabelNode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,50 +315,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DSMultilineLabelNode/DSMultilineLabelNode-Prefix.pch";
 				INFOPLIST_FILE = "DSMultilineLabelNode/DSMultilineLabelNode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		A8D41A0E18ABE4EE00CC03DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSMultilineLabelNode.app/DSMultilineLabelNode";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DSMultilineLabelNode/DSMultilineLabelNode-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DSMultilineLabelNodeTests/DSMultilineLabelNodeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A8D41A0F18ABE4EE00CC03DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSMultilineLabelNode.app/DSMultilineLabelNode";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DSMultilineLabelNode/DSMultilineLabelNode-Prefix.pch";
-				INFOPLIST_FILE = "DSMultilineLabelNodeTests/DSMultilineLabelNodeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -474,15 +339,6 @@
 			buildConfigurations = (
 				A8D41A0B18ABE4EE00CC03DF /* Debug */,
 				A8D41A0C18ABE4EE00CC03DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8D41A0D18ABE4EE00CC03DF /* Build configuration list for PBXNativeTarget "DSMultilineLabelNodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8D41A0E18ABE4EE00CC03DF /* Debug */,
-				A8D41A0F18ABE4EE00CC03DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

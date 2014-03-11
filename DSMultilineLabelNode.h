@@ -24,6 +24,7 @@
 @property(nonatomic) SKLabelHorizontalAlignmentMode horizontalAlignmentMode;
 @property(copy, nonatomic) NSString *text;
 @property(nonatomic) SKLabelVerticalAlignmentMode verticalAlignmentMode;
+@property(nonatomic, assign) CGFloat paragraphWidth;
 
 + (instancetype)labelNodeWithFontNamed:(NSString *)fontName;
 - (instancetype)initWithFontNamed:(NSString *)fontName;
