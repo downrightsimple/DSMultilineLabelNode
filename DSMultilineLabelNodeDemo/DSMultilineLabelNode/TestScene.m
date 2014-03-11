@@ -27,12 +27,21 @@
 		self.backgroundColor = [SKColor blueColor];
 		//	self.scaleMode = SKSceneScaleModeAspectFit;
 		
-		node = [DSMultilineLabelNode labelNodeWithFontNamed:@"Helvetica Neue UltraLight"];
+		node = [DSMultilineLabelNode labelNodeWithFontNamed:@"Futura"];
 		node.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		node.paragraphWidth = 400;
-		//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
-		//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter; //default
-		//	node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
+		
+		//uncomment any of these lines to see how they affect the paragraph style
+//		node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeLeft;
+//		node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter; //default
+//		node.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
+
+		//setting the anchor point different depending on what paragraph style you choose may help with positioning
+		//also note that setting the anchor point typically doesn't work on label nodes - this only works as it is actually an SKSpriteNode, galavanting as a label!
+//		node.anchorPoint = CGPointMake(0.0, 1.0); //Good for left justification
+//		node.anchorPoint = CGPointMake(0.5, 0.5); //(default) Good for center justification
+//		node.anchorPoint = CGPointMake(1.0, 1.0); // Good for right justification
+				
 		[self addChild:node];
 		node.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
 		

@@ -131,10 +131,14 @@
     paragraphStyle.lineSpacing = 1;
     
     //Create the font using the values set by the user
-	if (!_fontName) { //Mac build crashes if this is nil at any point hereafter
-		_fontName = @"Helvetica";
-	}
     DSFont *font = [DSFont fontWithName:self.fontName size:self.fontSize];
+	
+	if (!font) {
+		font = [DSFont fontWithName:@"Helvetica" size:self.fontSize];
+		NSLog(@"The font you specified was unavailable. Defaulted to Helvetica.");
+//		NSLog(@"The font you specified was unavailable. Defaulted to Helvetica. Here is a list of available fonts: %@", [DSFont familyNames]); //only available for debugging on iOS
+//		NSLog(@"Here is a list of variations to %@: %@", _fontName, [DSFont familyNames]);
+	}
     
     //Create our textAttributes dictionary that we'll use when drawing to the graphics context
     NSMutableDictionary *textAttributes = [NSMutableDictionary dictionary];
