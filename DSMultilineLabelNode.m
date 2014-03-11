@@ -111,7 +111,7 @@
 //Generates and applies new textures based on the current property values
 -(void) retexture
 {
-    DSImage *newTextImage = [self imageFromText:self.text];
+    DSMultiLineLabelImage *newTextImage = [self imageFromText:self.text];
     SKTexture *newTexture =[SKTexture textureWithImage:newTextImage];
     
     SKSpriteNode *selfNode = (SKSpriteNode*) self;
@@ -122,7 +122,7 @@
 
 }
 
--(DSImage *)imageFromText:(NSString *)text
+-(DSMultiLineLabelImage *)imageFromText:(NSString *)text
 {
     //First we define a paragrahp style, which has the support for doing the line breaks and text alignment that we require
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
@@ -131,13 +131,13 @@
     paragraphStyle.lineSpacing = 1;
     
     //Create the font using the values set by the user
-    DSFont *font = [DSFont fontWithName:self.fontName size:self.fontSize];
+    DSMultiLineLabelFont *font = [DSMultiLineLabelFont fontWithName:self.fontName size:self.fontSize];
 	
 	if (!font) {
-		font = [DSFont fontWithName:@"Helvetica" size:self.fontSize];
+		font = [DSMultiLineLabelFont fontWithName:@"Helvetica" size:self.fontSize];
 		NSLog(@"The font you specified was unavailable. Defaulted to Helvetica.");
-//		NSLog(@"The font you specified was unavailable. Defaulted to Helvetica. Here is a list of available fonts: %@", [DSFont familyNames]); //only available for debugging on iOS
-//		NSLog(@"Here is a list of variations to %@: %@", _fontName, [DSFont familyNames]);
+//		NSLog(@"The font you specified was unavailable. Defaulted to Helvetica. Here is a list of available fonts: %@", [DSMultiLineLabelFont familyNames]); //only available for debugging on iOS
+//		NSLog(@"Here is a list of variations to %@: %@", _fontName, [DSMultiLineLabelFont familyNames]);
 	}
     
     //Create our textAttributes dictionary that we'll use when drawing to the graphics context
@@ -189,13 +189,13 @@
     [text drawInRect:textRect withAttributes:textAttributes];
     
     //Create the image from the context
-    DSImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    DSMultiLineLabelImage *image = UIGraphicsGetImageFromCurrentImageContext();
     
     //Close the context
     UIGraphicsEndImageContext();
 #else 
 
-	DSImage *image = [[DSImage alloc] initWithSize:textRect.size];
+	DSMultiLineLabelImage *image = [[DSMultiLineLabelImage alloc] initWithSize:textRect.size];
 /*	
 	// this section may or may not be necessary (it builds and runs without, but I don't have enough experience to know if this makes things run smoother in any way, or if the stackexchange article was entirely purposed for something else)
 	NSBitmapImageRep* imageRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL pixelsWide:textRect.size.width pixelsHigh:textRect.size.height bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:0 bitsPerPixel:0];

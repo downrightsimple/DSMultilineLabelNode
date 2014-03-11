@@ -15,11 +15,11 @@
 //
 
 #if TARGET_OS_IPHONE
-#define DSImage UIImage
-#define DSFont UIFont
+#define DSMultiLineLabelImage UIImage
+#define DSMultiLineLabelFont UIFont
 #else
-#define DSImage NSImage
-#define DSFont NSFont
+#define DSMultiLineLabelImage NSImage
+#define DSMultiLineLabelFont NSFont
 #endif
 
 
