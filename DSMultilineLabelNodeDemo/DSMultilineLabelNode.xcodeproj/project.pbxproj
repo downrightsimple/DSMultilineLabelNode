@@ -36,14 +36,14 @@
 		33B2C27518CE93DB0006AC87 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		33B2C27618CE93DB0006AC87 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		33B2C27718CE93DB0006AC87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		33B2C27A18CE93DB0006AC87 /* MultiLineLabelNodeMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "MultiLineLabelNodeMac-Info.plist"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Info.plist"; sourceTree = "<group>"; };
+		33B2C27A18CE93DB0006AC87 /* MultiLineLabelNodeMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MultiLineLabelNodeMac-Info.plist"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Info.plist"; sourceTree = SOURCE_ROOT; };
 		33B2C27C18CE93DB0006AC87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		33B2C28018CE93DB0006AC87 /* MultiLineLabelNodeMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MultiLineLabelNodeMac-Prefix.pch"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Prefix.pch"; sourceTree = "<group>"; };
+		33B2C28018CE93DB0006AC87 /* MultiLineLabelNodeMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MultiLineLabelNodeMac-Prefix.pch"; path = "MultiLineLabelNodeMac/MultiLineLabelNodeMac-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		33B2C28218CE93DB0006AC87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		33B2C28418CE93DB0006AC87 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		33B2C28918CE93DB0006AC87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33B2C28B18CE93DB0006AC87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		33B2C2A918CE98A50006AC87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MultiLineLabelNodeMac/main.m; sourceTree = "<group>"; };
+		33B2C2A918CE98A50006AC87 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MultiLineLabelNodeMac/main.m; sourceTree = SOURCE_ROOT; };
 		A8D419D818ABE4ED00CC03DF /* DSMultilineLabelNode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSMultilineLabelNode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D419DB18ABE4ED00CC03DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8D419DD18ABE4ED00CC03DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -316,7 +316,7 @@
 			);
 			name = InfoPlist.strings;
 			path = MultiLineLabelNodeMac;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		33B2C28118CE93DB0006AC87 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
@@ -325,7 +325,7 @@
 			);
 			name = Credits.rtf;
 			path = MultiLineLabelNodeMac;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A8D419E418ABE4ED00CC03DF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;

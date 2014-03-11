@@ -131,6 +131,9 @@
     paragraphStyle.lineSpacing = 1;
     
     //Create the font using the values set by the user
+	if (!_fontName) { //Mac build crashes if this is nil at any point hereafter
+		_fontName = @"Helvetica";
+	}
     DSFont *font = [DSFont fontWithName:self.fontName size:self.fontSize];
     
     //Create our textAttributes dictionary that we'll use when drawing to the graphics context
@@ -164,6 +167,11 @@
     //iOS7 uses fractional size values.  So we needed to ceil it to make sure we have enough room for display.
     textRect.size.height = ceil(textRect.size.height);
     textRect.size.width = ceil(textRect.size.width);
+	
+	//Mac build crashes when the size is nothing - this also skips out on unecessary cycles below when the size is nothing
+	if (textRect.size.width == 0 || textRect.size.height == 0) {
+		return Nil;
+	}
     
     //The size of the bounding rect is going to be the size of our new node, so set the size here.
     SKSpriteNode *selfNode = (SKSpriteNode*) self;
@@ -183,11 +191,14 @@
     UIGraphicsEndImageContext();
 #else 
 
-
 	DSImage *image = [[DSImage alloc] initWithSize:textRect.size];
+/*	
+	// this section may or may not be necessary (it builds and runs without, but I don't have enough experience to know if this makes things run smoother in any way, or if the stackexchange article was entirely purposed for something else)
 	NSBitmapImageRep* imageRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL pixelsWide:textRect.size.width pixelsHigh:textRect.size.height bitsPerSample:8 samplesPerPixel:4 hasAlpha:YES isPlanar:NO colorSpaceName:NSCalibratedRGBColorSpace bytesPerRow:0 bitsPerPixel:0];
 	
 	[image addRepresentation:imageRep];
+	
+*/
 	[image lockFocus];
 	
 	[text drawInRect:textRect withAttributes:textAttributes];
