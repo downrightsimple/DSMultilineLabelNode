@@ -1,9 +1,17 @@
 DSMultilineLabelNode
 ====================
 
-SKLabelNode replacement to support multiline functionality.
+SKLabelNode replacement to support multiline functionality, now compatible with both Mac OS X and iOS builds of SpriteKit games.
 
 This should be a direct drop-in replacement for SKLabelNode, even though it's implemented by subclassing SKSpriteNode.  We support all the properties and methods of SKLabelNode.
+
+There is an exception as SKLabelNode appears to be more forgiving to having EXACT font names.
+
+The main difference to using an SKLabelNode is that you now may specify the property
+
+	paragraphWidth
+	
+This is a value in pixels as to how wide you want your label node to expand before creating newlines. See the demo for example usage.
 
 Relevant files are DSMultilineLabelNode.h and DSMultilineLabelNode.m
  
