@@ -153,18 +153,29 @@
     [textAttributes setObject:self.fontColor forKey:NSForegroundColorAttributeName];
     
     
-    //Calculate the size that the text will take up, given our options.  We use the full screen size for the bounds
-	if (_paragraphWidth == 0) {
-		_paragraphWidth = self.scene.size.width;
-	}
+    //Calculate the size that the text will take up, given our options.
 #if TARGET_OS_IPHONE
-    CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, self.scene.size.height)
+    if (_paragraphWidth < 0.00001f) {
+        if (self.scene) {
+            _paragraphWidth = self.scene.size.width;
+        } else {
+            _paragraphWidth = [UIScreen mainScreen].bounds.size.width;
+        }
+    }
+    CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, MAXFLOAT)
                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
                                       attributes:textAttributes
                                          context:nil];
 				
 #else
-	CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, self.scene.size.height)
+    if (_paragraphWidth < 0.00001f) {
+        if (self.scene) {
+            _paragraphWidth = self.scene.size.width;
+        } else {
+            _paragraphWidth = [NSScreen mainScreen].frame.size.width;
+        }
+    }
+  	CGRect textRect = [text boundingRectWithSize:CGSizeMake(_paragraphWidth, MAXFLOAT)
                                          options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine
                                       attributes:textAttributes];
 #endif
