@@ -169,8 +169,8 @@
                                       attributes:textAttributes];
 #endif
     //iOS7 uses fractional size values.  So we needed to ceil it to make sure we have enough room for display.
-    textRect.size.height = ceil(textRect.size.height);
-    textRect.size.width = ceil(textRect.size.width);
+    textRect.size.height = (CGFloat)ceil(textRect.size.height);
+    textRect.size.width = (CGFloat)ceil(textRect.size.width);
 	
 	//Mac build crashes when the size is nothing - this also skips out on unecessary cycles below when the size is nothing
 	if (textRect.size.width == 0 || textRect.size.height == 0) {
