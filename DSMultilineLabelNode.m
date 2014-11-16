@@ -112,8 +112,10 @@
 -(void) retexture
 {
     DSMultiLineLabelImage *newTextImage = [self imageFromText:self.text];
-    SKTexture *newTexture =[SKTexture textureWithImage:newTextImage];
-    
+    SKTexture *newTexture = nil;
+    if (newTextImage) {
+        newTexture =[SKTexture textureWithImage:newTextImage];
+    }
     SKSpriteNode *selfNode = (SKSpriteNode*) self;
     selfNode.texture = newTexture;
     
@@ -124,6 +126,10 @@
 
 -(DSMultiLineLabelImage *)imageFromText:(NSString *)text
 {
+    if (!text || [text length] == 0) {
+        return nil;
+    }
+  
     //First we define a paragrahp style, which has the support for doing the line breaks and text alignment that we require
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping; //To get multi-line
