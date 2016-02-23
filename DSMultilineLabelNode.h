@@ -25,7 +25,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface DSMultilineLabelNode : SKSpriteNode
+@interface DSMultilineLabelNode : SKSpriteNode <NSCoding>
 
 @property(retain, nonatomic) SKColor *fontColor;
 @property(copy, nonatomic) NSString *fontName;
