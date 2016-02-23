@@ -61,6 +61,33 @@
     return node;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+  self = [super initWithCoder:aDecoder];
+  if (self) {
+    _fontColor = [aDecoder decodeObjectForKey:@"fontColor"];
+    _fontName = [aDecoder decodeObjectForKey:@"fontName"];
+    _fontSize = (CGFloat)[aDecoder decodeDoubleForKey:@"fontSize"];
+    _horizontalAlignmentMode = [aDecoder decodeIntegerForKey:@"horizontalAlignmentMode"];
+    _text = [aDecoder decodeObjectForKey:@"text"];
+    _verticalAlignmentMode = [aDecoder decodeIntegerForKey:@"verticalAlignmentMode"];
+    _paragraphWidth = (CGFloat)[aDecoder decodeDoubleForKey:@"paragraphWidth"];
+  }
+  return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+  [super encodeWithCoder:aCoder];
+  [aCoder encodeObject:_fontColor forKey:@"fontColor"];
+  [aCoder encodeObject:_fontName forKey:@"fontName"];
+  [aCoder encodeDouble:_fontSize forKey:@"fontSize"];
+  [aCoder encodeInteger:_horizontalAlignmentMode forKey:@"horizontalAlignmentMode"];
+  [aCoder encodeObject:_text forKey:@"text"];
+  [aCoder encodeInteger:_verticalAlignmentMode forKey:@"verticalAlignmentMode"];
+  [aCoder encodeDouble:_paragraphWidth forKey:@"paragraphWidth"];
+}
+
 #pragma mark setters for SKLabelNode properties
 //For each of the setters, after we set the appropriate property, we call the
 //retexture method to generate and apply our new texture to the node
